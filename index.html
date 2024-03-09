@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Library</h1>
+        </header>
+        <main>
+            <button class="new-book-button">New book</button>
+            <div class="books">
+                <!-- <div class="card">
+                    <h2 class="title">Atomic Habits</h2>
+                    <p class="author">James Clear</p>
+                    <p class="pages">243 pages</p>
+                </div> -->
+            </div>
+            <dialog id="add-new-book-dialog">
+                <button class="close-button"></button>
+                <form id="add-new-book-form">
+                    <ul>
+                        <li>
+                            <h2>Add New Book</h2>
+                        </li>
+                        <li>
+                            <div class="float-label">
+                                <label for="bookName">Name:</label>
+                                <input type="text" id="bookName" name="bookName" required minlength="1">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="float-label">
+                                <label for="author">Author:</label>
+                                <input type="text" id="author" name="author" required minlength="1">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="float-label">
+                                <label for="pages">Pages:</label>
+                                <input type="number" id="pages" name="pages" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inline-block-label">
+                                <label for="hasRead">Have you read it?</label>
+                                <input type="checkbox" id="hasRead" name="hasRead">
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit" class="submit-button">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </dialog>
+        </main>
+        <footer>
+            <p>Copyright © 2024 Linielt</p>
+        </footer>
+    </div>
+</body>
+</html>
